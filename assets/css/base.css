@@ -5,7 +5,7 @@
   --black-color: #000;
   --text-color: #333;
   --border-color: #dbdbdb;
-  --star-gold-color: #FFCE3D;
+  --star-gold-color: #ffce3d;
   --header-height: 120px;
   --nav-height: 34px;
   --header-with-search-height: calc(var(--header-height) - var(--nav-height));
@@ -40,19 +40,19 @@ html {
 }
 
 /* Test */
-.grid__column-2{
+.grid__column-2 {
   padding-left: 5px;
   padding-right: 5px;
   width: 16.6667%;
 }
 
-.grid__column-2-4{
+.grid__column-2-4 {
   padding-left: 5px;
   padding-right: 5px;
   width: 20%;
 }
 
-.grid__column-10{
+.grid__column-10 {
   padding-left: 5px;
   padding-right: 5px;
   width: 83.3334%;
@@ -144,9 +144,8 @@ html {
   color: #666666;
 }
 
-
 /* Selection */
-.select-input{
+.select-input {
   position: relative;
   min-width: 200px;
   height: 34px;
@@ -159,16 +158,16 @@ html {
   cursor: pointer;
 }
 
-.select-input__label{
+.select-input__label {
   font-size: 1.4rem;
 }
 
-.select-input__icon{
+.select-input__icon {
   font-size: 1.4;
-  color: rgb(131,131,131);
+  color: rgb(131, 131, 131);
 }
 
-.select-input__list{
+.select-input__list {
   position: absolute;
   left: 0;
   right: 0;
@@ -181,11 +180,11 @@ html {
   z-index: 1;
 }
 
-.select-input:hover .select-input__list{
+.select-input:hover .select-input__list {
   display: block;
 }
 
-.select-input__link{
+.select-input__link {
   text-decoration: none;
   font-size: 1.4rem;
   color: var(--text-color);
@@ -193,6 +192,63 @@ html {
   padding: 4px 0;
 }
 
-.select-input__link:hover{
+.select-input__link:hover {
   color: var(--primary-color);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.pagination-item {
+  list-style-type: none;
+  margin: 0 1.5rem;
+  border-radius: 2px;
+}
+
+.pagination-item--active{
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.pagination-item--active:hover{
+  background-color: #f05d40;
+}
+
+.pagination-item-icon--left{
+  margin: 0 1.5rem 0 0;
+}
+
+.pagination-item-icon--right{
+  margin: 0 0 0 1.5rem;
+}
+
+.pagination-item__link {
+  --height: 3rem;
+  display: block;
+  flex: 1;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+  min-width: 4rem;
+  text-align: center;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 2px;
+}
+
+.pagination-item:hover .pagination-item__link{
+  color: var(--primary-color);
+} 
+
+.pagination-item--active .pagination-item__link{
+  color: var(--white-color);
+}
+
+.pagination-item__icon {
+  font-size: 1.6rem;
 }
